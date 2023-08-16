@@ -14,7 +14,7 @@ async def ping() -> dict:
 
 
 async def mainpage() -> str:
-    return "YOU ARE ON THE MAIN PAGE"
+    return "YOU ARE ON THE MAIN PAGE OF APPLICATION"
 
 
 async def create_record(request: Request) -> dict:
@@ -34,10 +34,10 @@ async def get_records(request: Request) -> list:
 
 
 routes = [
-    APIRoute(path="/ping", endpoint=ping, methods=["GET"]),
-    APIRoute(path="/", endpoint=mainpage, methods=["GET"]),
-    APIRoute(path="/create_record", endpoint=create_record, methods=["POST"]),
-    APIRoute(path="/get_records", endpoint=get_records, methods=["GET"]),
+    APIRoute(path="/back/ping", endpoint=ping, methods=["GET"]),
+    APIRoute(path="/back/", endpoint=mainpage, methods=["GET"]),
+    APIRoute(path="/back/create_record", endpoint=create_record, methods=["POST"]),
+    APIRoute(path="/back/get_records", endpoint=get_records, methods=["GET"]),
 ]
 
 client = AsyncIOMotorClient(MONGODB_URL)
