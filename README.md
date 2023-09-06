@@ -12,5 +12,5 @@ It's consist of:
 
 All this components separted into Docker's containers and use Docker network:
 
-![Architecture of application](/www/images/Схема Web servera.jpg)
+![Architecture of application](/www/images/web_app.jpg)
 
